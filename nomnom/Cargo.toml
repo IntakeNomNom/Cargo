@@ -1,0 +1,14 @@
+[package]
+name = "nomnom"
+version = "0.0.4"
+authors = ["Nikola Hristov <nikola@playform.cloud>"]
+edition = "2021"
+description = "IntakeNomNom nomnom"
+documentation = "https://docs.rs/nomnom"
+readme = "README.md"
+repository = "https://github.com/IntakeNomNom/crates/tree/main/nomnom"
+license-file = "LICENSE"
+keywords = []
+categories = []
+
+[dependencies]
