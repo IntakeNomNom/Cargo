@@ -4,10 +4,12 @@ updates:
       directory: "/blur"
       schedule:
           interval: "daily"
+
     - package-ecosystem: "cargo"
       directory: "/intake"
       schedule:
           interval: "daily"
+
     - package-ecosystem: "cargo"
       directory: "/nomnom"
       schedule:
