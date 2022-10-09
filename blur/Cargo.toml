@@ -1,14 +1,5 @@
 [package]
 name = "blur"
 version = "0.0.4"
-authors = ["nikolaxhristov"]
-edition = "2021"
-description = "IntakeNomNom blur"
-documentation = "https://docs.rs/blur"
-readme = "README.md"
-repository = "https://github.com/IntakeNomNom/crates/tree/main/blur"
-license-file = "LICENSE"
-keywords = []
-categories = []
 
 [dependencies]
