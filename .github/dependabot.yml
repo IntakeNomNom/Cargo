@@ -1,7 +1,25 @@
 version: 2
 updates:
-    - package-ecosystem: "npm"
+    - package-ecosystem: "github-actions"
       directory: "/"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "cargo"
+      directory: "/blur"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "cargo"
+      directory: "/intake"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "cargo"
+      directory: "/nomnom"
       schedule:
           interval: "daily"
       versioning-strategy: increase
