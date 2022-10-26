@@ -1,0 +1,5 @@
+[package]
+name = "nomnom"
+version = "0.0.4"
+
+[dependencies]
