@@ -9,16 +9,16 @@ updates:
       directory: "/blur"
       schedule:
           interval: "daily"
-      versioning-strategy: increase
+      versioning-strategy: lockfile-only
 
     - package-ecosystem: "cargo"
       directory: "/intake"
       schedule:
           interval: "daily"
-      versioning-strategy: increase
+      versioning-strategy: lockfile-only
 
     - package-ecosystem: "cargo"
       directory: "/nomnom"
       schedule:
           interval: "daily"
-      versioning-strategy: increase
+      versioning-strategy: lockfile-only
