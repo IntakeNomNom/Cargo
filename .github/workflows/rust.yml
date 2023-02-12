@@ -59,7 +59,7 @@ jobs:
                   profile: minimal
                   toolchain: ${{ matrix.toolchain }}
 
-            - uses: actions/cache@v3.2.5
+            - uses: actions/cache@v3.2.3
               with:
                   path: |
                       ~/.cargo/bin/
@@ -73,7 +73,7 @@ jobs:
                 command: build
                 args: --release --all-features --manifest-path ./blur/Cargo.toml
 
-            - uses: actions/cache@v3.2.5
+            - uses: actions/cache@v3.2.3
               with:
                   path: |
                       ~/.cargo/bin/
@@ -87,7 +87,7 @@ jobs:
                 command: build
                 args: --release --all-features --manifest-path ./intake/Cargo.toml
 
-            - uses: actions/cache@v3.2.5
+            - uses: actions/cache@v3.2.3
               with:
                   path: |
                       ~/.cargo/bin/
