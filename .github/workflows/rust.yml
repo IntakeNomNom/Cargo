@@ -67,7 +67,7 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key: ${{ runner.os }}-cargo-${{ hashFiles('./blur/Cargo.toml') }}
+                  key: ${{ runner.os }}-cargo-${{ hash('./blur/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
                 command: build
@@ -81,7 +81,7 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key: ${{ runner.os }}-cargo-${{ hashFiles('./intake/Cargo.toml') }}
+                  key: ${{ runner.os }}-cargo-${{ hash('./intake/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
                 command: build
@@ -95,7 +95,7 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key: ${{ runner.os }}-cargo-${{ hashFiles('./nomnom/Cargo.toml') }}
+                  key: ${{ runner.os }}-cargo-${{ hash('./nomnom/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
                 command: build
