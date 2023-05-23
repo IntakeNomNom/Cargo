@@ -67,14 +67,11 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key:
-                      ${{ runner.os }}-cargo-${{ hashFiles('./blur/Cargo.toml')
-                      }}
+                  key: ${{ runner.os }}-cargo-${{ hashFiles('./blur/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
-                  command: build
-                  args:
-                      --release --all-features --manifest-path ./blur/Cargo.toml
+                command: build
+                args: --release --all-features --manifest-path ./blur/Cargo.toml
 
             - uses: actions/cache@v3.3.1
               with:
@@ -84,15 +81,11 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key:
-                      ${{ runner.os }}-cargo-${{
-                      hashFiles('./intake/Cargo.toml') }}
+                  key: ${{ runner.os }}-cargo-${{ hashFiles('./intake/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
-                  command: build
-                  args:
-                      --release --all-features --manifest-path
-                      ./intake/Cargo.toml
+                command: build
+                args: --release --all-features --manifest-path ./intake/Cargo.toml
 
             - uses: actions/cache@v3.3.1
               with:
@@ -102,12 +95,8 @@ jobs:
                       ~/.cargo/registry/cache/
                       ~/.cargo/git/db/
                       target/
-                  key:
-                      ${{ runner.os }}-cargo-${{
-                      hashFiles('./nomnom/Cargo.toml') }}
+                  key: ${{ runner.os }}-cargo-${{ hashFiles('./nomnom/Cargo.toml') }}
             - uses: actions-rs/cargo@v1.0.3
               with:
-                  command: build
-                  args:
-                      --release --all-features --manifest-path
-                      ./nomnom/Cargo.toml
+                command: build
+                args: --release --all-features --manifest-path ./nomnom/Cargo.toml
