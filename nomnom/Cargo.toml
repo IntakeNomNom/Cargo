@@ -2,4 +2,7 @@
 name = "nomnom"
 version = "0.0.4"
 
+[build]
+target-dir = "Target"
+
 [dependencies]

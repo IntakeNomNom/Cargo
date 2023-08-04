@@ -2,4 +2,7 @@
 name = "blur"
 version = "0.0.4"
 
+[build]
+target-dir = "Target"
+
 [dependencies]
