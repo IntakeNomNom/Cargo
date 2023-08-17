@@ -1,0 +1,25 @@
+version: 2
+
+updates:
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "daily"
+
+    - package-ecosystem: "cargo"
+      directory: "/blur"
+      schedule:
+          interval: "daily"
+      versioning-strategy: lockfile-only
+
+    - package-ecosystem: "cargo"
+      directory: "/intake"
+      schedule:
+          interval: "daily"
+      versioning-strategy: lockfile-only
+
+    - package-ecosystem: "cargo"
+      directory: "/nomnom"
+      schedule:
+          interval: "daily"
+      versioning-strategy: lockfile-only
